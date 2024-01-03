@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docs_ebg_prods",
+  "info": {
+    "singularName": "docs-ebg-prod",
+    "pluralName": "docs-ebg-prods",
+    "displayName": "Docs EBG PROD",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

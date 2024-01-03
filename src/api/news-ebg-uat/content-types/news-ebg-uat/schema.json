@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_ebg_uats",
+  "info": {
+    "singularName": "news-ebg-uat",
+    "pluralName": "news-ebg-uats",
+    "displayName": "News EBG UAT"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}
