@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_rate_ebg_prods",
+  "info": {
+    "singularName": "program-rate-ebg-prod",
+    "pluralName": "program-rate-ebg-prods",
+    "displayName": "Program Rate EBG PROD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ProgramType": {
+      "type": "enumeration",
+      "enum": [
+        "Standard",
+        "OEM Promotional Rates/Special Programs Offered"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

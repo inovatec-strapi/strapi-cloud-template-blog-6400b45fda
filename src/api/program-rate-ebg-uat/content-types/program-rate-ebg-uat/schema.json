@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_rate_ebg_uats",
+  "info": {
+    "singularName": "program-rate-ebg-uat",
+    "pluralName": "program-rate-ebg-uats",
+    "displayName": "Program Rate EBG UAT"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ProgramType": {
+      "type": "enumeration",
+      "enum": [
+        "Standard",
+        "OEM Promotional Rates/Special Programs Offered"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}
