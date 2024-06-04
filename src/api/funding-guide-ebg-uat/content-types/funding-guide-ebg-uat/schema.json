@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "funding_guide_ebg_uats",
+  "info": {
+    "singularName": "funding-guide-ebg-uat",
+    "pluralName": "funding-guide-ebg-uats",
+    "displayName": "Funding Guide EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
