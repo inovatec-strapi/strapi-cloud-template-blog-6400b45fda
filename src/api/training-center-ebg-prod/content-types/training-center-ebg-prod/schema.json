@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_center_ebg_prods",
+  "info": {
+    "singularName": "training-center-ebg-prod",
+    "pluralName": "training-center-ebg-prods",
+    "displayName": "Training Center EBG PROD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Tips & Best Practices",
+        "Training Guides",
+        "FAQs",
+        "Glossary",
+        "Compliance/Fraud tools and articles"
+      ]
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

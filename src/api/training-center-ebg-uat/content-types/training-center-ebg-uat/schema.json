@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_center_ebg_uats",
+  "info": {
+    "singularName": "training-center-ebg-uat",
+    "pluralName": "training-center-ebg-uats",
+    "displayName": "Training Center EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Tips & Best Practices",
+        "Training Guides",
+        "FAQs",
+        "Glossary",
+        "Compliance/Fraud tools and articles"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
