@@ -4,7 +4,8 @@
   "info": {
     "singularName": "news-ebg-uat",
     "pluralName": "news-ebg-uats",
-    "displayName": "News EBG UAT"
+    "displayName": "News EBG UAT",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,16 @@
     },
     "Active": {
       "type": "boolean"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
