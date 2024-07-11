@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers_testimonials_ebg_uats",
+  "info": {
+    "singularName": "dealers-testimonials-ebg-uat",
+    "pluralName": "dealers-testimonials-ebg-uats",
+    "displayName": "Dealers Testimonials EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Dealer": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers_testimonials_ebg_prods",
+  "info": {
+    "singularName": "dealers-testimonials-ebg-prod",
+    "pluralName": "dealers-testimonials-ebg-prods",
+    "displayName": "Dealers Testimonials EBG PROD",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Dealer": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}
