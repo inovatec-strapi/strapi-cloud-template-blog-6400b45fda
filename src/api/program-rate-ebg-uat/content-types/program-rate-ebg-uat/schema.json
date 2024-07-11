@@ -4,7 +4,8 @@
   "info": {
     "singularName": "program-rate-ebg-uat",
     "pluralName": "program-rate-ebg-uats",
-    "displayName": "Program Rate EBG UAT"
+    "displayName": "Program Rate EBG UAT",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,30 +16,34 @@
       "type": "string"
     },
     "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ProgramType": {
       "type": "enumeration",
       "enum": [
         "Standard",
-        "OEM Promotional Rates/Special Programs Offered"
+        "OEM Promotional Rates/Special Programs Offered",
+        "Sponsored Promotional Programs",
+        "Additional manufactures "
       ]
     },
     "Active": {
