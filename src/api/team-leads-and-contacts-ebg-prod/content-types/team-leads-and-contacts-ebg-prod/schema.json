@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_leads_and_contacts_ebg_prods",
+  "info": {
+    "singularName": "team-leads-and-contacts-ebg-prod",
+    "pluralName": "team-leads-and-contacts-ebg-prods",
+    "displayName": "Team Leads And Contacts EBG PROD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

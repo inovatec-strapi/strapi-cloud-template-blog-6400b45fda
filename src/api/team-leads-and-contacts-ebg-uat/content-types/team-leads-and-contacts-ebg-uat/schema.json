@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_leads_and_contacts_ebg_uats",
+  "info": {
+    "singularName": "team-leads-and-contacts-ebg-uat",
+    "pluralName": "team-leads-and-contacts-ebg-uats",
+    "displayName": "Team Leads And Contacts EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

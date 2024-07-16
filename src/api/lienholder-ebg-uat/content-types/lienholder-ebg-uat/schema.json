@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lienholder_ebg_uats",
+  "info": {
+    "singularName": "lienholder-ebg-uat",
+    "pluralName": "lienholder-ebg-uats",
+    "displayName": "Lienholder EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "State": {
+      "type": "string"
+    },
+    "EltrId": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "ZipCode": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}
