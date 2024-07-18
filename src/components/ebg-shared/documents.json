@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_ebg_shared_documents",
+  "info": {
+    "displayName": "Documents",
+    "icon": "folder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Documents": {
+      "displayName": "Document",
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.document"
+    }
+  }
+}

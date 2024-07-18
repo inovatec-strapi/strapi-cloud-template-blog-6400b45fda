@@ -25,22 +25,15 @@
     "Active": {
       "type": "boolean"
     },
-    "Title": {
-      "type": "string"
-    },
-    "Document": {
-      "type": "media",
-      "multiple": false,
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.documents",
+        "ebg-shared.fa-qs"
+      ],
+      "max": 1,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "Description": {
-      "type": "text"
+      "min": 1
     }
   }
 }

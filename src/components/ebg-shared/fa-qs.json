@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_fa_qs",
+  "info": {
+    "displayName": "FAQs"
+  },
+  "options": {},
+  "attributes": {
+    "FAQ": {
+      "displayName": "FAQ",
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.faq"
+    }
+  }
+}

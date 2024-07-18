@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ebg_shared_faqs",
+  "info": {
+    "displayName": "FAQ",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "richtext"
+    }
+  }
+}

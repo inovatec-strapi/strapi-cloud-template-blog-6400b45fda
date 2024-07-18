@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ebg_shared_document",
+  "info": {
+    "displayName": "Document",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

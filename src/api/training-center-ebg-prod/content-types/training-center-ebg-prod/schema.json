@@ -4,16 +4,14 @@
   "info": {
     "singularName": "training-center-ebg-prod",
     "pluralName": "training-center-ebg-prods",
-    "displayName": "Training Center EBG PROD"
+    "displayName": "Training Center EBG PROD",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
     "Active": {
       "type": "boolean"
     },
@@ -27,18 +25,14 @@
         "Compliance/Fraud tools and articles"
       ]
     },
-    "Document": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.documents",
+        "ebg-shared.fa-qs"
       ],
-      "type": "media",
-      "multiple": false
-    },
-    "Description": {
-      "type": "text"
+      "max": 1,
+      "min": 1
     }
   }
 }
