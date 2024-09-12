@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ebg_shared_additional_manufactures_singles",
+  "info": {
+    "displayName": "Additional_Manufactures_single"
+  },
+  "options": {},
+  "attributes": {
+    "TItle": {
+      "type": "string"
+    }
+  }
+}

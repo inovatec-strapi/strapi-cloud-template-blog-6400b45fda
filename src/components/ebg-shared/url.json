@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_urls",
+  "info": {
+    "displayName": "URL"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

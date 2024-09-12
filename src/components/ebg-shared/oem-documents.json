@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ebg_shared_oem_documents",
+  "info": {
+    "displayName": "OEM-Documents",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

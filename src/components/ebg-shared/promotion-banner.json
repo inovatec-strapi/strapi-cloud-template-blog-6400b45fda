@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_promotion_banners",
+  "info": {
+    "displayName": "Promotion_Banner"
+  },
+  "options": {},
+  "attributes": {
+    "Promotion_Banner": {
+      "displayName": "Promotion_Banner_component",
+      "type": "component",
+      "repeatable": false,
+      "component": "ebg-shared.promotion-banner-component"
+    }
+  }
+}

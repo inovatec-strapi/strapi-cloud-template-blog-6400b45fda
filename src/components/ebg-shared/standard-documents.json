@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_standard_documents",
+  "info": {
+    "displayName": "Standard_Documents"
+  },
+  "options": {},
+  "attributes": {
+    "Standard_Promo": {
+      "displayName": "Standard",
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.standard"
+    }
+  }
+}

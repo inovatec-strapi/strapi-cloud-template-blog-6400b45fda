@@ -4,7 +4,8 @@
   "info": {
     "singularName": "program-rate-ebg-prod",
     "pluralName": "program-rate-ebg-prods",
-    "displayName": "Program Rate EBG PROD"
+    "displayName": "Program Rate EBG PROD",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,35 +15,28 @@
     "Title": {
       "type": "string"
     },
-    "Document": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "Logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
     "ProgramType": {
       "type": "enumeration",
       "enum": [
         "Standard",
-        "OEM Promotional Rates/Special Programs Offered"
+        "OEM Promotional Rates/Special Programs Offered",
+        "Sponsored Promotional Programs",
+        "Additional manufactures "
       ]
     },
     "Active": {
       "type": "boolean"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.oem",
+        "ebg-shared.additional-manufactures",
+        "ebg-shared.promotion-banner",
+        "ebg-shared.standard-documents"
+      ],
+      "min": 1,
+      "max": 1
     }
   }
 }

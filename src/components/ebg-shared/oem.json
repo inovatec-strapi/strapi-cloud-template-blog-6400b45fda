@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ebg_shared_oems",
+  "info": {
+    "displayName": "OEM",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "OEM_Documents": {
+      "displayName": "OEM-Documents",
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.oem-documents"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

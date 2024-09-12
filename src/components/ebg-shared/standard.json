@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ebg_shared_standards",
+  "info": {
+    "displayName": "Standard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
