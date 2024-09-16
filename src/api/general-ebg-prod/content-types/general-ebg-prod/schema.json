@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "general_ebg_prods",
+  "info": {
+    "singularName": "general-ebg-prod",
+    "pluralName": "general-ebg-prods",
+    "displayName": "General EBG PROD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Alert"
+      ]
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.site-alert"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_site_alerts",
+  "info": {
+    "displayName": "Site Alert"
+  },
+  "options": {},
+  "attributes": {
+    "SiteAlerts": {
+      "displayName": "Site-Alert-Component",
+      "type": "component",
+      "repeatable": false,
+      "component": "ebg-shared.site-alert-component"
+    }
+  }
+}

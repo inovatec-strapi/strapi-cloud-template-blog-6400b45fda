@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "general_ebg_uats",
+  "info": {
+    "singularName": "general-ebg-uat",
+    "pluralName": "general-ebg-uats",
+    "displayName": "General EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Alert"
+      ]
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.site-alert"
+      ],
+      "max": 1,
+      "min": 1
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

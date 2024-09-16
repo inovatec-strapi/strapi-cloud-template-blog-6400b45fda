@@ -1070,6 +1070,78 @@ export interface ApiFundingGuideEbgUatFundingGuideEbgUat
   };
 }
 
+export interface ApiGeneralEbgProdGeneralEbgProd extends Schema.CollectionType {
+  collectionName: 'general_ebg_prods';
+  info: {
+    singularName: 'general-ebg-prod';
+    pluralName: 'general-ebg-prods';
+    displayName: 'General EBG PROD';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Type: Attribute.Enumeration<['Alert']>;
+    Active: Attribute.Boolean;
+    Content: Attribute.DynamicZone<['ebg-shared.site-alert']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::general-ebg-prod.general-ebg-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::general-ebg-prod.general-ebg-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiGeneralEbgUatGeneralEbgUat extends Schema.CollectionType {
+  collectionName: 'general_ebg_uats';
+  info: {
+    singularName: 'general-ebg-uat';
+    pluralName: 'general-ebg-uats';
+    displayName: 'General EBG UAT';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Type: Attribute.Enumeration<['Alert']>;
+    Content: Attribute.DynamicZone<['ebg-shared.site-alert']> &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 1;
+        },
+        number
+      >;
+    Active: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::general-ebg-uat.general-ebg-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::general-ebg-uat.general-ebg-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Schema.SingleType {
   collectionName: 'globals';
   info: {
@@ -1562,6 +1634,8 @@ declare module '@strapi/types' {
       'api::docs-ebg-uat.docs-ebg-uat': ApiDocsEbgUatDocsEbgUat;
       'api::funding-guide-ebg-prod.funding-guide-ebg-prod': ApiFundingGuideEbgProdFundingGuideEbgProd;
       'api::funding-guide-ebg-uat.funding-guide-ebg-uat': ApiFundingGuideEbgUatFundingGuideEbgUat;
+      'api::general-ebg-prod.general-ebg-prod': ApiGeneralEbgProdGeneralEbgProd;
+      'api::general-ebg-uat.general-ebg-uat': ApiGeneralEbgUatGeneralEbgUat;
       'api::global.global': ApiGlobalGlobal;
       'api::lienholder-ebg-prod.lienholder-ebg-prod': ApiLienholderEbgProdLienholderEbgProd;
       'api::lienholder-ebg-uat.lienholder-ebg-uat': ApiLienholderEbgUatLienholderEbgUat;

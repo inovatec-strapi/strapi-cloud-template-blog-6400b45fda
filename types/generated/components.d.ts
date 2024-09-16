@@ -94,6 +94,26 @@ export interface EbgSharedStandardDocuments extends Schema.Component {
   };
 }
 
+export interface EbgSharedSiteAlert extends Schema.Component {
+  collectionName: 'components_ebg_shared_site_alerts';
+  info: {
+    displayName: 'Site Alert';
+  };
+  attributes: {
+    SiteAlerts: Attribute.Component<'ebg-shared.site-alert-component'>;
+  };
+}
+
+export interface EbgSharedSiteAlertComponent extends Schema.Component {
+  collectionName: 'components_ebg_shared_site_alert_components';
+  info: {
+    displayName: 'Site-Alert-Component';
+  };
+  attributes: {
+    Text: Attribute.Text;
+  };
+}
+
 export interface EbgSharedPromotionBanner extends Schema.Component {
   collectionName: 'components_ebg_shared_promotion_banners';
   info: {
@@ -223,6 +243,8 @@ declare module '@strapi/types' {
       'ebg-shared.url': EbgSharedUrl;
       'ebg-shared.standard': EbgSharedStandard;
       'ebg-shared.standard-documents': EbgSharedStandardDocuments;
+      'ebg-shared.site-alert': EbgSharedSiteAlert;
+      'ebg-shared.site-alert-component': EbgSharedSiteAlertComponent;
       'ebg-shared.promotion-banner': EbgSharedPromotionBanner;
       'ebg-shared.promotion-banner-component': EbgSharedPromotionBannerComponent;
       'ebg-shared.oem': EbgSharedOem;
