@@ -15,11 +15,8 @@
     "Category": {
       "type": "enumeration",
       "enum": [
-        "Tips & Best Practices",
-        "Training Guides",
-        "FAQs",
-        "Glossary",
-        "Compliance/Fraud tools and articles"
+        "Downloadable PDFs",
+        "FAQs"
       ]
     },
     "Active": {
@@ -34,6 +31,9 @@
       "max": 1,
       "required": false,
       "min": 1
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }

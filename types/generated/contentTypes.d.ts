@@ -1542,15 +1542,7 @@ export interface ApiTrainingCenterEbgProdTrainingCenterEbgProd
   };
   attributes: {
     Active: Attribute.Boolean;
-    Category: Attribute.Enumeration<
-      [
-        'Tips & Best Practices',
-        'Training Guides',
-        'FAQs',
-        'Glossary',
-        'Compliance/Fraud tools and articles'
-      ]
-    >;
+    Category: Attribute.Enumeration<['Downloadable PDFs', 'FAQs']>;
     Content: Attribute.DynamicZone<
       ['ebg-shared.documents', 'ebg-shared.fa-qs']
     > &
@@ -1561,6 +1553,7 @@ export interface ApiTrainingCenterEbgProdTrainingCenterEbgProd
         },
         number
       >;
+    Title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1592,15 +1585,7 @@ export interface ApiTrainingCenterEbgUatTrainingCenterEbgUat
     draftAndPublish: true;
   };
   attributes: {
-    Category: Attribute.Enumeration<
-      [
-        'Tips & Best Practices',
-        'Training Guides',
-        'FAQs',
-        'Glossary',
-        'Compliance/Fraud tools and articles'
-      ]
-    >;
+    Category: Attribute.Enumeration<['Downloadable PDFs', 'FAQs']>;
     Active: Attribute.Boolean;
     Content: Attribute.DynamicZone<
       ['ebg-shared.documents', 'ebg-shared.fa-qs']
@@ -1612,6 +1597,7 @@ export interface ApiTrainingCenterEbgUatTrainingCenterEbgUat
         },
         number
       >;
+    Title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

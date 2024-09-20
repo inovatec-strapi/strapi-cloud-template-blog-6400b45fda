@@ -237,7 +237,6 @@ export interface EbgSharedDocument extends Schema.Component {
   attributes: {
     Title: Attribute.String;
     Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    URL: Attribute.String;
   };
 }
 
