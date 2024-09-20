@@ -4,7 +4,8 @@
   "info": {
     "singularName": "docs-ebg-uat",
     "pluralName": "docs-ebg-uats",
-    "displayName": "Docs EBG UAT"
+    "displayName": "Docs EBG UAT",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,21 +15,24 @@
     "Title": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
-    },
-    "Document": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "Active": {
       "type": "boolean"
+    },
+    "Order": {
+      "type": "integer"
+    },
+    "Documents": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.group-of-documents"
+      ]
+    },
+    "Include_After_Section": {
+      "type": "enumeration",
+      "enum": [
+        "Funding & Lienholder Information",
+        "Training & Education Center"
+      ]
     }
   }
 }

@@ -15,13 +15,15 @@
     "Type": {
       "type": "enumeration",
       "enum": [
-        "Alert"
+        "Alert",
+        "Logo_Licensing_Agreement"
       ]
     },
     "Content": {
       "type": "dynamiczone",
       "components": [
-        "ebg-shared.site-alert"
+        "ebg-shared.site-alert",
+        "ebg-shared.logo-licensing-agreement-component"
       ],
       "max": 1,
       "min": 1

@@ -160,6 +160,39 @@ export interface EbgSharedOemDocuments extends Schema.Component {
   };
 }
 
+export interface EbgSharedLogoLicensingAgreement extends Schema.Component {
+  collectionName: 'components_ebg_shared_logo_licensing_agreements';
+  info: {
+    displayName: 'Logo_Licensing_Agreement';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface EbgSharedLogoLicensingAgreementComponent
+  extends Schema.Component {
+  collectionName: 'components_ebg_shared_logo_licensing_agreement_components';
+  info: {
+    displayName: 'Logo_Licensing_Agreement_component';
+  };
+  attributes: {
+    Logo_Licensing_Agreement: Attribute.Component<'ebg-shared.logo-licensing-agreement'>;
+  };
+}
+
+export interface EbgSharedGroupOfDocuments extends Schema.Component {
+  collectionName: 'components_ebg_shared_group_of_documents';
+  info: {
+    displayName: 'Group_of_Documents';
+    description: '';
+  };
+  attributes: {
+    Documents: Attribute.Component<'ebg-shared.dealer-forms-documents', true>;
+  };
+}
+
 export interface EbgSharedFaq extends Schema.Component {
   collectionName: 'components_ebg_shared_faqs';
   info: {
@@ -208,6 +241,18 @@ export interface EbgSharedDocument extends Schema.Component {
   };
 }
 
+export interface EbgSharedDealerFormsDocuments extends Schema.Component {
+  collectionName: 'components_ebg_shared_dealer_forms_documents';
+  info: {
+    displayName: 'Dealer_Forms_Documents';
+    description: '';
+  };
+  attributes: {
+    TItle: Attribute.String;
+    Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface EbgSharedAdditionalManufactures extends Schema.Component {
   collectionName: 'components_ebg_shared_additional_manufactures';
   info: {
@@ -249,10 +294,14 @@ declare module '@strapi/types' {
       'ebg-shared.promotion-banner-component': EbgSharedPromotionBannerComponent;
       'ebg-shared.oem': EbgSharedOem;
       'ebg-shared.oem-documents': EbgSharedOemDocuments;
+      'ebg-shared.logo-licensing-agreement': EbgSharedLogoLicensingAgreement;
+      'ebg-shared.logo-licensing-agreement-component': EbgSharedLogoLicensingAgreementComponent;
+      'ebg-shared.group-of-documents': EbgSharedGroupOfDocuments;
       'ebg-shared.faq': EbgSharedFaq;
       'ebg-shared.fa-qs': EbgSharedFaQs;
       'ebg-shared.documents': EbgSharedDocuments;
       'ebg-shared.document': EbgSharedDocument;
+      'ebg-shared.dealer-forms-documents': EbgSharedDealerFormsDocuments;
       'ebg-shared.additional-manufactures': EbgSharedAdditionalManufactures;
       'ebg-shared.additional-manufactures-single': EbgSharedAdditionalManufacturesSingle;
     }

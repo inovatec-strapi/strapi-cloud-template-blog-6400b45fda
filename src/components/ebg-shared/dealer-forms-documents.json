@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ebg_shared_dealer_forms_documents",
+  "info": {
+    "displayName": "Dealer_Forms_Documents",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TItle": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ebg_shared_group_of_documents",
+  "info": {
+    "displayName": "Group_of_Documents",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Documents": {
+      "displayName": "Dealer_Forms_Documents",
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.dealer-forms-documents"
+    }
+  }
+}

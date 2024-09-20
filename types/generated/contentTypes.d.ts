@@ -947,9 +947,12 @@ export interface ApiDocsEbgProdDocsEbgProd extends Schema.CollectionType {
   };
   attributes: {
     Title: Attribute.String;
-    Description: Attribute.Text;
-    Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Active: Attribute.Boolean;
+    Order: Attribute.Integer;
+    Documents: Attribute.DynamicZone<['ebg-shared.group-of-documents']>;
+    Include_After_Section: Attribute.Enumeration<
+      ['Funding & Lienholder Information', 'Training & Education Center']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -974,15 +977,19 @@ export interface ApiDocsEbgUatDocsEbgUat extends Schema.CollectionType {
     singularName: 'docs-ebg-uat';
     pluralName: 'docs-ebg-uats';
     displayName: 'Docs EBG UAT';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Title: Attribute.String;
-    Description: Attribute.Text;
-    Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Active: Attribute.Boolean;
+    Order: Attribute.Integer;
+    Documents: Attribute.DynamicZone<['ebg-shared.group-of-documents']>;
+    Include_After_Section: Attribute.Enumeration<
+      ['Funding & Lienholder Information', 'Training & Education Center']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1076,14 +1083,17 @@ export interface ApiGeneralEbgProdGeneralEbgProd extends Schema.CollectionType {
     singularName: 'general-ebg-prod';
     pluralName: 'general-ebg-prods';
     displayName: 'General EBG PROD';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Type: Attribute.Enumeration<['Alert']>;
+    Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
     Active: Attribute.Boolean;
-    Content: Attribute.DynamicZone<['ebg-shared.site-alert']>;
+    Content: Attribute.DynamicZone<
+      ['ebg-shared.site-alert', 'ebg-shared.logo-licensing-agreement-component']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1114,8 +1124,10 @@ export interface ApiGeneralEbgUatGeneralEbgUat extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Type: Attribute.Enumeration<['Alert']>;
-    Content: Attribute.DynamicZone<['ebg-shared.site-alert']> &
+    Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
+    Content: Attribute.DynamicZone<
+      ['ebg-shared.site-alert', 'ebg-shared.logo-licensing-agreement-component']
+    > &
       Attribute.SetMinMax<
         {
           min: 1;
@@ -1195,6 +1207,11 @@ export interface ApiLienholderEbgProdLienholderEbgProd
     City: Attribute.String;
     ZipCode: Attribute.String;
     Active: Attribute.Boolean;
+    EltrId2: Attribute.String;
+    Name2: Attribute.String;
+    Address2: Attribute.String;
+    City2: Attribute.String;
+    ZipCode2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1233,6 +1250,11 @@ export interface ApiLienholderEbgUatLienholderEbgUat
     City: Attribute.String;
     ZipCode: Attribute.String;
     Active: Attribute.Boolean;
+    EltrId2: Attribute.String;
+    Name2: Attribute.String;
+    Address2: Attribute.String;
+    City2: Attribute.String;
+    ZipCode2: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ebg_shared_logo_licensing_agreements",
+  "info": {
+    "displayName": "Logo_Licensing_Agreement"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

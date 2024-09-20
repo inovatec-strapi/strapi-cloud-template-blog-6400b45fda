@@ -4,7 +4,8 @@
   "info": {
     "singularName": "general-ebg-prod",
     "pluralName": "general-ebg-prods",
-    "displayName": "General EBG PROD"
+    "displayName": "General EBG PROD",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,8 @@
     "Type": {
       "type": "enumeration",
       "enum": [
-        "Alert"
+        "Alert",
+        "Logo_Licensing_Agreement"
       ]
     },
     "Active": {
@@ -23,7 +25,8 @@
     "Content": {
       "type": "dynamiczone",
       "components": [
-        "ebg-shared.site-alert"
+        "ebg-shared.site-alert",
+        "ebg-shared.logo-licensing-agreement-component"
       ]
     }
   }

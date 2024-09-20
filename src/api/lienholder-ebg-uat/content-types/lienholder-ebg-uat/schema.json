@@ -32,6 +32,21 @@
     },
     "Active": {
       "type": "boolean"
+    },
+    "EltrId2": {
+      "type": "string"
+    },
+    "Name2": {
+      "type": "string"
+    },
+    "Address2": {
+      "type": "string"
+    },
+    "City2": {
+      "type": "string"
+    },
+    "ZipCode2": {
+      "type": "string"
     }
   }
 }
