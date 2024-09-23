@@ -1585,7 +1585,14 @@ export interface ApiTrainingCenterEbgUatTrainingCenterEbgUat
     draftAndPublish: true;
   };
   attributes: {
-    Category: Attribute.Enumeration<['Downloadable PDFs', 'FAQs']>;
+    Category: Attribute.Enumeration<
+      [
+        'Downloadable PDFs',
+        'FAQs',
+        'Glossary',
+        'Compliance/Fraud tools and articles'
+      ]
+    >;
     Active: Attribute.Boolean;
     Content: Attribute.DynamicZone<
       ['ebg-shared.documents', 'ebg-shared.fa-qs']
