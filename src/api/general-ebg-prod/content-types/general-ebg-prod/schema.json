@@ -25,8 +25,7 @@
     "Content": {
       "type": "dynamiczone",
       "components": [
-        "ebg-shared.site-alert",
-        "ebg-shared.logo-licensing-agreement-component"
+        "ebg-shared.site-alert"
       ]
     }
   }

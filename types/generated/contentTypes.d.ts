@@ -1091,9 +1091,7 @@ export interface ApiGeneralEbgProdGeneralEbgProd extends Schema.CollectionType {
   attributes: {
     Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
     Active: Attribute.Boolean;
-    Content: Attribute.DynamicZone<
-      ['ebg-shared.site-alert', 'ebg-shared.logo-licensing-agreement-component']
-    >;
+    Content: Attribute.DynamicZone<['ebg-shared.site-alert']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1125,9 +1123,7 @@ export interface ApiGeneralEbgUatGeneralEbgUat extends Schema.CollectionType {
   };
   attributes: {
     Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
-    Content: Attribute.DynamicZone<
-      ['ebg-shared.site-alert', 'ebg-shared.logo-licensing-agreement-component']
-    > &
+    Content: Attribute.DynamicZone<['ebg-shared.site-alert']> &
       Attribute.SetMinMax<
         {
           min: 1;
