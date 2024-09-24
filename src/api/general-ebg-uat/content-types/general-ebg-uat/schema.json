@@ -22,7 +22,8 @@
     "Content": {
       "type": "dynamiczone",
       "components": [
-        "ebg-shared.site-alert"
+        "ebg-shared.site-alert",
+        "ebg-shared.licensing-agreement"
       ],
       "max": 1,
       "min": 1

@@ -160,6 +160,27 @@ export interface EbgSharedOemDocuments extends Schema.Component {
   };
 }
 
+export interface EbgSharedLicensingAgreement extends Schema.Component {
+  collectionName: 'components_ebg_shared_licensing_agreements';
+  info: {
+    displayName: 'Licensing Agreement';
+  };
+  attributes: {
+    Licensing_Agreement: Attribute.Component<'ebg-shared.licensing-agreement-c'>;
+  };
+}
+
+export interface EbgSharedLicensingAgreementC extends Schema.Component {
+  collectionName: 'components_ebg_shared_licensing_agreement_cs';
+  info: {
+    displayName: 'Licensing_Agreement_c';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface EbgSharedGroupOfDocuments extends Schema.Component {
   collectionName: 'components_ebg_shared_group_of_documents';
   info: {
@@ -271,6 +292,8 @@ declare module '@strapi/types' {
       'ebg-shared.promotion-banner-component': EbgSharedPromotionBannerComponent;
       'ebg-shared.oem': EbgSharedOem;
       'ebg-shared.oem-documents': EbgSharedOemDocuments;
+      'ebg-shared.licensing-agreement': EbgSharedLicensingAgreement;
+      'ebg-shared.licensing-agreement-c': EbgSharedLicensingAgreementC;
       'ebg-shared.group-of-documents': EbgSharedGroupOfDocuments;
       'ebg-shared.faq': EbgSharedFaq;
       'ebg-shared.fa-qs': EbgSharedFaQs;

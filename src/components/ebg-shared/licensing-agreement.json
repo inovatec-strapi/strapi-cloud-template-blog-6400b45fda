@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ebg_shared_licensing_agreements",
+  "info": {
+    "displayName": "Licensing Agreement"
+  },
+  "options": {},
+  "attributes": {
+    "Licensing_Agreement": {
+      "displayName": "Licensing_Agreement_c",
+      "type": "component",
+      "repeatable": false,
+      "component": "ebg-shared.licensing-agreement-c"
+    }
+  }
+}

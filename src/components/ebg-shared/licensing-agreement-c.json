@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ebg_shared_licensing_agreement_cs",
+  "info": {
+    "displayName": "Licensing_Agreement_c"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1091,7 +1091,16 @@ export interface ApiGeneralEbgProdGeneralEbgProd extends Schema.CollectionType {
   attributes: {
     Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
     Active: Attribute.Boolean;
-    Content: Attribute.DynamicZone<['ebg-shared.site-alert']>;
+    Content: Attribute.DynamicZone<
+      ['ebg-shared.site-alert', 'ebg-shared.licensing-agreement']
+    > &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 1;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1123,7 +1132,9 @@ export interface ApiGeneralEbgUatGeneralEbgUat extends Schema.CollectionType {
   };
   attributes: {
     Type: Attribute.Enumeration<['Alert', 'Logo_Licensing_Agreement']>;
-    Content: Attribute.DynamicZone<['ebg-shared.site-alert']> &
+    Content: Attribute.DynamicZone<
+      ['ebg-shared.site-alert', 'ebg-shared.licensing-agreement']
+    > &
       Attribute.SetMinMax<
         {
           min: 1;
@@ -1524,36 +1535,6 @@ export interface ApiTeamLeadsAndContactsEbgUatTeamLeadsAndContactsEbgUat
   };
 }
 
-export interface ApiTestEbgTestEbg extends Schema.CollectionType {
-  collectionName: 'test_ebgs';
-  info: {
-    singularName: 'test-ebg';
-    pluralName: 'test-ebgs';
-    displayName: 'TEST EBG';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    TEST: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::test-ebg.test-ebg',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::test-ebg.test-ebg',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiTrainingCenterEbgProdTrainingCenterEbgProd
   extends Schema.CollectionType {
   collectionName: 'training_center_ebg_prods';
@@ -1686,7 +1667,6 @@ declare module '@strapi/types' {
       'api::program-rate-ebg-uat.program-rate-ebg-uat': ApiProgramRateEbgUatProgramRateEbgUat;
       'api::team-leads-and-contacts-ebg-prod.team-leads-and-contacts-ebg-prod': ApiTeamLeadsAndContactsEbgProdTeamLeadsAndContactsEbgProd;
       'api::team-leads-and-contacts-ebg-uat.team-leads-and-contacts-ebg-uat': ApiTeamLeadsAndContactsEbgUatTeamLeadsAndContactsEbgUat;
-      'api::test-ebg.test-ebg': ApiTestEbgTestEbg;
       'api::training-center-ebg-prod.training-center-ebg-prod': ApiTrainingCenterEbgProdTrainingCenterEbgProd;
       'api::training-center-ebg-uat.training-center-ebg-uat': ApiTrainingCenterEbgUatTrainingCenterEbgUat;
     }
