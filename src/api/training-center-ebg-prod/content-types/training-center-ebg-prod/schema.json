@@ -19,7 +19,9 @@
       "type": "enumeration",
       "enum": [
         "Downloadable PDFs",
-        "FAQs"
+        "FAQs",
+        "Glossary",
+        "Compliance/Fraud tools and articles"
       ]
     },
     "Content": {

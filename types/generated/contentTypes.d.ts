@@ -1549,7 +1549,14 @@ export interface ApiTrainingCenterEbgProdTrainingCenterEbgProd
   };
   attributes: {
     Active: Attribute.Boolean;
-    Category: Attribute.Enumeration<['Downloadable PDFs', 'FAQs']>;
+    Category: Attribute.Enumeration<
+      [
+        'Downloadable PDFs',
+        'FAQs',
+        'Glossary',
+        'Compliance/Fraud tools and articles'
+      ]
+    >;
     Content: Attribute.DynamicZone<
       ['ebg-shared.documents', 'ebg-shared.fa-qs']
     > &
