@@ -1,32 +1,24 @@
 {
   "collectionName": "components_ebg_shared_promotion_banner_components",
   "info": {
-    "displayName": "Promotion_Banner_component"
+    "displayName": "Promotion_Banner_component",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
       "type": "text"
     },
-    "Logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

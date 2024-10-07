@@ -1,7 +1,8 @@
 {
   "collectionName": "components_ebg_shared_standard_documents",
   "info": {
-    "displayName": "Standard_Documents"
+    "displayName": "Standard_Documents",
+    "description": ""
   },
   "options": {},
   "attributes": {

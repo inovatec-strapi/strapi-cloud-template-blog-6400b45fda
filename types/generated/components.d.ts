@@ -88,6 +88,7 @@ export interface EbgSharedStandardDocuments extends Schema.Component {
   collectionName: 'components_ebg_shared_standard_documents';
   info: {
     displayName: 'Standard_Documents';
+    description: '';
   };
   attributes: {
     Standard_Promo: Attribute.Component<'ebg-shared.standard', true>;
@@ -118,9 +119,15 @@ export interface EbgSharedPromotionBanner extends Schema.Component {
   collectionName: 'components_ebg_shared_promotion_banners';
   info: {
     displayName: 'Promotion_Banner';
+    description: '';
   };
   attributes: {
-    Promotion_Banner: Attribute.Component<'ebg-shared.promotion-banner-component'>;
+    Promotion_Banner: Attribute.Component<
+      'ebg-shared.promotion-banner-component',
+      true
+    >;
+    Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Promo_Title: Attribute.String;
   };
 }
 
@@ -128,10 +135,10 @@ export interface EbgSharedPromotionBannerComponent extends Schema.Component {
   collectionName: 'components_ebg_shared_promotion_banner_components';
   info: {
     displayName: 'Promotion_Banner_component';
+    description: '';
   };
   attributes: {
     Title: Attribute.Text;
-    Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Document: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }

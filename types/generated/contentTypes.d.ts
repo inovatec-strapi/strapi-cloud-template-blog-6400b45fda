@@ -1442,6 +1442,7 @@ export interface ApiProgramRateEbgUatProgramRateEbgUat
         },
         number
       >;
+    Order: Attribute.Integer & Attribute.DefaultTo<1>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
