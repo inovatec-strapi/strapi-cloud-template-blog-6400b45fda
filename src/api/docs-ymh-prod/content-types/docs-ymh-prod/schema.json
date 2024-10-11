@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docs_ymh_prods",
+  "info": {
+    "singularName": "docs-ymh-prod",
+    "pluralName": "docs-ymh-prods",
+    "displayName": "Docs YMH PROD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

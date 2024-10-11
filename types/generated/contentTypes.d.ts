@@ -1008,6 +1008,69 @@ export interface ApiDocsEbgUatDocsEbgUat extends Schema.CollectionType {
   };
 }
 
+export interface ApiDocsYmhProdDocsYmhProd extends Schema.CollectionType {
+  collectionName: 'docs_ymh_prods';
+  info: {
+    singularName: 'docs-ymh-prod';
+    pluralName: 'docs-ymh-prods';
+    displayName: 'Docs YMH PROD';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Document: Attribute.Media<'files'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::docs-ymh-prod.docs-ymh-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::docs-ymh-prod.docs-ymh-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDocsYmhUatDocsYmhUat extends Schema.CollectionType {
+  collectionName: 'docs_ymh_uats';
+  info: {
+    singularName: 'docs-ymh-uat';
+    pluralName: 'docs-ymh-uats';
+    displayName: 'Docs YMH UAT';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Document: Attribute.Media<'files'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::docs-ymh-uat.docs-ymh-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::docs-ymh-uat.docs-ymh-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFundingGuideEbgProdFundingGuideEbgProd
   extends Schema.CollectionType {
   collectionName: 'funding_guide_ebg_prods';
@@ -1662,6 +1725,8 @@ declare module '@strapi/types' {
       'api::dealers-testimonials-ebg-uat.dealers-testimonials-ebg-uat': ApiDealersTestimonialsEbgUatDealersTestimonialsEbgUat;
       'api::docs-ebg-prod.docs-ebg-prod': ApiDocsEbgProdDocsEbgProd;
       'api::docs-ebg-uat.docs-ebg-uat': ApiDocsEbgUatDocsEbgUat;
+      'api::docs-ymh-prod.docs-ymh-prod': ApiDocsYmhProdDocsYmhProd;
+      'api::docs-ymh-uat.docs-ymh-uat': ApiDocsYmhUatDocsYmhUat;
       'api::funding-guide-ebg-prod.funding-guide-ebg-prod': ApiFundingGuideEbgProdFundingGuideEbgProd;
       'api::funding-guide-ebg-uat.funding-guide-ebg-uat': ApiFundingGuideEbgUatFundingGuideEbgUat;
       'api::general-ebg-prod.general-ebg-prod': ApiGeneralEbgProdGeneralEbgProd;
