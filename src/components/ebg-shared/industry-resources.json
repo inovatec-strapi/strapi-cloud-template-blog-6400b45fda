@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ebg_shared_industry_resources",
+  "info": {
+    "displayName": "Industry_resources"
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "URL": {
+      "type": "string"
+    }
+  }
+}

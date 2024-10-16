@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners_ebg_uats",
+  "info": {
+    "singularName": "partners-ebg-uat",
+    "pluralName": "partners-ebg-uats",
+    "displayName": "Partners EBG UAT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Order": {
+      "type": "integer"
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

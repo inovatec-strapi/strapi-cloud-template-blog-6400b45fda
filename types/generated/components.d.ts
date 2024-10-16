@@ -188,6 +188,53 @@ export interface EbgSharedLicensingAgreementC extends Schema.Component {
   };
 }
 
+export interface EbgSharedIndustryResources extends Schema.Component {
+  collectionName: 'components_ebg_shared_industry_resources';
+  info: {
+    displayName: 'Industry_resources';
+  };
+  attributes: {
+    Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    URL: Attribute.String;
+  };
+}
+
+export interface EbgSharedIndustryResourceComponent extends Schema.Component {
+  collectionName: 'components_ebg_shared_industry_resource_components';
+  info: {
+    displayName: 'Industry_resource_component';
+  };
+  attributes: {
+    Industry_resources_comp: Attribute.Component<
+      'ebg-shared.industry-resources',
+      true
+    >;
+  };
+}
+
+export interface EbgSharedIndustryNews extends Schema.Component {
+  collectionName: 'components_ebg_shared_industry_news';
+  info: {
+    displayName: 'Industry_news';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Description: Attribute.Text;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface EbgSharedIndustryNewsComp extends Schema.Component {
+  collectionName: 'components_ebg_shared_industry_news_comps';
+  info: {
+    displayName: 'Industry News Comp';
+  };
+  attributes: {
+    Industry_News: Attribute.Component<'ebg-shared.industry-news'>;
+  };
+}
+
 export interface EbgSharedGroupOfDocuments extends Schema.Component {
   collectionName: 'components_ebg_shared_group_of_documents';
   info: {
@@ -301,6 +348,10 @@ declare module '@strapi/types' {
       'ebg-shared.oem-documents': EbgSharedOemDocuments;
       'ebg-shared.licensing-agreement': EbgSharedLicensingAgreement;
       'ebg-shared.licensing-agreement-c': EbgSharedLicensingAgreementC;
+      'ebg-shared.industry-resources': EbgSharedIndustryResources;
+      'ebg-shared.industry-resource-component': EbgSharedIndustryResourceComponent;
+      'ebg-shared.industry-news': EbgSharedIndustryNews;
+      'ebg-shared.industry-news-comp': EbgSharedIndustryNewsComp;
       'ebg-shared.group-of-documents': EbgSharedGroupOfDocuments;
       'ebg-shared.faq': EbgSharedFaq;
       'ebg-shared.fa-qs': EbgSharedFaQs;

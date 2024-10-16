@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_ebg_shared_industry_news_comps",
+  "info": {
+    "displayName": "Industry News Comp"
+  },
+  "options": {},
+  "attributes": {
+    "Industry_News": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ebg-shared.industry-news"
+    }
+  }
+}

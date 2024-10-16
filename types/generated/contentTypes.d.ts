@@ -1348,6 +1348,74 @@ export interface ApiNewsEbgUatNewsEbgUat extends Schema.CollectionType {
   };
 }
 
+export interface ApiPartnersEbgProdPartnersEbgProd
+  extends Schema.CollectionType {
+  collectionName: 'partners_ebg_prods';
+  info: {
+    singularName: 'partners-ebg-prod';
+    pluralName: 'partners-ebg-prods';
+    displayName: 'Partners EBG PROD';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Order: Attribute.Integer;
+    Active: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::partners-ebg-prod.partners-ebg-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::partners-ebg-prod.partners-ebg-prod',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPartnersEbgUatPartnersEbgUat extends Schema.CollectionType {
+  collectionName: 'partners_ebg_uats';
+  info: {
+    singularName: 'partners-ebg-uat';
+    pluralName: 'partners-ebg-uats';
+    displayName: 'Partners EBG UAT';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Order: Attribute.Integer;
+    Active: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::partners-ebg-uat.partners-ebg-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::partners-ebg-uat.partners-ebg-uat',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProgramRateEbgProdProgramRateEbgProd
   extends Schema.CollectionType {
   collectionName: 'program_rate_ebg_prods';
@@ -1671,6 +1739,8 @@ declare module '@strapi/types' {
       'api::lienholder-ebg-uat.lienholder-ebg-uat': ApiLienholderEbgUatLienholderEbgUat;
       'api::news-ebg-prod.news-ebg-prod': ApiNewsEbgProdNewsEbgProd;
       'api::news-ebg-uat.news-ebg-uat': ApiNewsEbgUatNewsEbgUat;
+      'api::partners-ebg-prod.partners-ebg-prod': ApiPartnersEbgProdPartnersEbgProd;
+      'api::partners-ebg-uat.partners-ebg-uat': ApiPartnersEbgUatPartnersEbgUat;
       'api::program-rate-ebg-prod.program-rate-ebg-prod': ApiProgramRateEbgProdProgramRateEbgProd;
       'api::program-rate-ebg-uat.program-rate-ebg-uat': ApiProgramRateEbgUatProgramRateEbgUat;
       'api::team-leads-and-contacts-ebg-prod.team-leads-and-contacts-ebg-prod': ApiTeamLeadsAndContactsEbgProdTeamLeadsAndContactsEbgProd;

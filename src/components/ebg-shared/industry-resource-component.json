@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_ebg_shared_industry_resource_components",
+  "info": {
+    "displayName": "Industry_resource_component"
+  },
+  "options": {},
+  "attributes": {
+    "Industry_resources_comp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ebg-shared.industry-resources"
+    }
+  }
+}
