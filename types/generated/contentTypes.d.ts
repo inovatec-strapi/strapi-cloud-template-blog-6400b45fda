@@ -1292,10 +1292,21 @@ export interface ApiNewsEbgProdNewsEbgProd extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    Description: Attribute.Text;
     Active: Attribute.Boolean;
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Category: Attribute.Enumeration<['News', 'Resource']>;
+    Content: Attribute.DynamicZone<
+      [
+        'ebg-shared.industry-resource-component',
+        'ebg-shared.industry-news-comp'
+      ]
+    > &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 1;
+        },
+        number
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1326,10 +1337,21 @@ export interface ApiNewsEbgUatNewsEbgUat extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    Description: Attribute.Text;
     Active: Attribute.Boolean;
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Content: Attribute.DynamicZone<
+      [
+        'ebg-shared.industry-resource-component',
+        'ebg-shared.industry-news-comp'
+      ]
+    > &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 1;
+        },
+        number
+      >;
+    Category: Attribute.Enumeration<['News', 'Resource']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -12,24 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
-    },
-    "Description": {
-      "type": "text"
-    },
     "Active": {
       "type": "boolean"
     },
-    "Image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "News",
+        "Resource"
+      ]
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "ebg-shared.industry-resource-component",
+        "ebg-shared.industry-news-comp"
       ],
-      "type": "media",
-      "multiple": false
+      "min": 1,
+      "max": 1
     }
   }
 }
